@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  xq: MyString
+  xx: MyString
+  nj: MyString
+  bj: MyString
+  zh: 1
+  xm: MyString
+  xb: MyString
+  xh: MyString
+  sfzh: MyString
+  mz: MyString
+  csd: MyString
+  hkszd: MyString
+  jtdz: MyString
+  fqxm: MyString
+  mqxm: MyString
+  jhrxm: MyString
+  lxdh: MyString
+  byxx: MyString
+
+two:
+  xq: MyString
+  xx: MyString
+  nj: MyString
+  bj: MyString
+  zh: 1
+  xm: MyString
+  xb: MyString
+  xh: MyString
+  sfzh: MyString
+  mz: MyString
+  csd: MyString
+  hkszd: MyString
+  jtdz: MyString
+  fqxm: MyString
+  mqxm: MyString
+  jhrxm: MyString
+  lxdh: MyString
+  byxx: MyString

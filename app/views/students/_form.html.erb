@@ -1,0 +1,89 @@
+<%= form_for(@student) do |f| %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% @student.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :xq %><br />
+    <%= f.text_field :xq %>
+  </div>
+  <div class="field">
+    <%= f.label :xx %><br />
+    <%= f.text_field :xx %>
+  </div>
+  <div class="field">
+    <%= f.label :nj %><br />
+    <%= f.text_field :nj %>
+  </div>
+  <div class="field">
+    <%= f.label :bj %><br />
+    <%= f.text_field :bj %>
+  </div>
+  <div class="field">
+    <%= f.label :zh %><br />
+    <%= f.number_field :zh %>
+  </div>
+  <div class="field">
+    <%= f.label :xm %><br />
+    <%= f.text_field :xm %>
+  </div>
+  <div class="field">
+    <%= f.label :xb %><br />
+    <%= f.text_field :xb %>
+  </div>
+  <div class="field">
+    <%= f.label :xh %><br />
+    <%= f.text_field :xh %>
+  </div>
+  <div class="field">
+    <%= f.label :sfzh %><br />
+    <%= f.text_field :sfzh %>
+  </div>
+  <div class="field">
+    <%= f.label :mz %><br />
+    <%= f.text_field :mz %>
+  </div>
+  <div class="field">
+    <%= f.label :csd %><br />
+    <%= f.text_field :csd %>
+  </div>
+  <div class="field">
+    <%= f.label :hkszd %><br />
+    <%= f.text_field :hkszd %>
+  </div>
+  <div class="field">
+    <%= f.label :jtdz %><br />
+    <%= f.text_field :jtdz %>
+  </div>
+  <div class="field">
+    <%= f.label :fqxm %><br />
+    <%= f.text_field :fqxm %>
+  </div>
+  <div class="field">
+    <%= f.label :mqxm %><br />
+    <%= f.text_field :mqxm %>
+  </div>
+  <div class="field">
+    <%= f.label :jhrxm %><br />
+    <%= f.text_field :jhrxm %>
+  </div>
+  <div class="field">
+    <%= f.label :lxdh %><br />
+    <%= f.text_field :lxdh %>
+  </div>
+  <div class="field">
+    <%= f.label :byxx %><br />
+    <%= f.text_field :byxx %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
