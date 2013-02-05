@@ -1,0 +1,53 @@
+<h1>Listing cjs</h1>
+
+<table>
+  <tr>
+    <th>Ksh</th>
+    <th>Zkzh</th>
+    <th>Xx</th>
+    <th>Nj</th>
+    <th>Bj</th>
+    <th>Zh</th>
+    <th>Xm</th>
+    <th>Yw</th>
+    <th>Sx</th>
+    <th>Yy</th>
+    <th>Wl</th>
+    <th>Hx</th>
+    <th>Sw</th>
+    <th>Zz</th>
+    <th>Ls</th>
+    <th>Dl</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cjs.each do |cj| %>
+  <tr>
+    <td><%= cj.ksh %></td>
+    <td><%= cj.zkzh %></td>
+    <td><%= cj.xx %></td>
+    <td><%= cj.nj %></td>
+    <td><%= cj.bj %></td>
+    <td><%= cj.zh %></td>
+    <td><%= cj.xm %></td>
+    <td><%= cj.yw %></td>
+    <td><%= cj.sx %></td>
+    <td><%= cj.yy %></td>
+    <td><%= cj.wl %></td>
+    <td><%= cj.hx %></td>
+    <td><%= cj.sw %></td>
+    <td><%= cj.zz %></td>
+    <td><%= cj.ls %></td>
+    <td><%= cj.dl %></td>
+    <td><%= link_to 'Show', cj %></td>
+    <td><%= link_to 'Edit', edit_cj_path(cj) %></td>
+    <td><%= link_to 'Destroy', cj, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cj', new_cj_path %>

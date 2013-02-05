@@ -4,11 +4,6 @@
 <%=link_to "科目设置", subjects_path %>
 <%=link_to "留言", posts_path %>
 
-<% form_for :user, :url=>{:controller=>"user", :action=>"import"}, :html => { :multipart => true } do |f| -%>       
-   上传用户资料导入数据：  
-   <%= file_field :user, :file, :id=>'csvfile' %>  
-   <%= submit_tag 'Submit' -%>  
-<%= end %>  
 
 
 <p>Find me in app/views/home/index.html.erb</p>

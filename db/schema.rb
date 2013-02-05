@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130205022105) do
+ActiveRecord::Schema.define(:version => 20130205122453) do
+
+  create_table "cjs", :force => true do |t|
+    t.string   "ksh"
+    t.string   "zkzh"
+    t.string   "xx"
+    t.integer  "nj"
+    t.integer  "bj"
+    t.integer  "zh"
+    t.string   "xm"
+    t.integer  "yw"
+    t.integer  "sx"
+    t.integer  "yy"
+    t.integer  "wl"
+    t.integer  "hx"
+    t.integer  "sw"
+    t.integer  "zz"
+    t.integer  "ls"
+    t.integer  "dl"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"

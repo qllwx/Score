@@ -1,4 +1,6 @@
 Score::Application.routes.draw do
+  resources :cjs
+
   resources :grades
 
   resources :students

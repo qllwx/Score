@@ -1,0 +1,81 @@
+<%= form_for(@cj) do |f| %>
+  <% if @cj.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cj.errors.count, "error") %> prohibited this cj from being saved:</h2>
+
+      <ul>
+      <% @cj.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ksh %><br />
+    <%= f.text_field :ksh %>
+  </div>
+  <div class="field">
+    <%= f.label :zkzh %><br />
+    <%= f.text_field :zkzh %>
+  </div>
+  <div class="field">
+    <%= f.label :xx %><br />
+    <%= f.text_field :xx %>
+  </div>
+  <div class="field">
+    <%= f.label :nj %><br />
+    <%= f.text_field :nj %>
+  </div>
+  <div class="field">
+    <%= f.label :bj %><br />
+    <%= f.text_field :bj %>
+  </div>
+  <div class="field">
+    <%= f.label :zh %><br />
+    <%= f.text_field :zh %>
+  </div>
+  <div class="field">
+    <%= f.label :xm %><br />
+    <%= f.text_field :xm %>
+  </div>
+  <div class="field">
+    <%= f.label :yw %><br />
+    <%= f.text_field :yw %>
+  </div>
+  <div class="field">
+    <%= f.label :sx %><br />
+    <%= f.text_field :sx %>
+  </div>
+  <div class="field">
+    <%= f.label :yy %><br />
+    <%= f.text_field :yy %>
+  </div>
+  <div class="field">
+    <%= f.label :wl %><br />
+    <%= f.text_field :wl %>
+  </div>
+  <div class="field">
+    <%= f.label :hx %><br />
+    <%= f.text_field :hx %>
+  </div>
+  <div class="field">
+    <%= f.label :sw %><br />
+    <%= f.text_field :sw %>
+  </div>
+  <div class="field">
+    <%= f.label :zz %><br />
+    <%= f.text_field :zz %>
+  </div>
+  <div class="field">
+    <%= f.label :ls %><br />
+    <%= f.text_field :ls %>
+  </div>
+  <div class="field">
+    <%= f.label :dl %><br />
+    <%= f.text_field :dl %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
