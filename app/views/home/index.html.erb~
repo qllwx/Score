@@ -1,5 +1,6 @@
 <h1>清流县教育局学生成绩管理系统</h1>
 <h2>2013年1月1日</h2>
 <%=link_to "首页" ,'home/index' %>
+<%=link_to "科目设置", subjects_path %>
 <%=link_to "留言", posts_path %>
 <p>Find me in app/views/home/index.html.erb</p>
