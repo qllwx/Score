@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20130205122453) do
     t.string   "ksh"
     t.string   "zkzh"
     t.string   "xx"
-    t.integer  "nj"
+    t.string   "nj"
     t.integer  "bj"
     t.integer  "zh"
     t.string   "xm"

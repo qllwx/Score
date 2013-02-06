@@ -8,7 +8,7 @@ namespace :csvimport do
     i=0
     Cj.delete_all
     print 'beging import CSV file data...',csv_file_path
-    CSV.foreach(csv_file_path) do |row|
+    CSV.foreach(csv_file_path,:headers=>true) do |row|
 	Cj.create!({
      	:ksh=>row[0],
      	:zkzh=>row[1],

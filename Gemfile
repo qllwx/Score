@@ -3,8 +3,9 @@ source 'https://rubygems.org'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'mime-types'
-
+#gem 'fastercsv'
 gem 'rails', '3.2.8'
+gem 'will_paginate'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

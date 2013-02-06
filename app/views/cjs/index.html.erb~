@@ -49,5 +49,5 @@
 </table>
 
 <br />
-<%= will_paginate @cjs ,:previous_label=>'上一页',:next_label=>'下一页'%>
+<%= will_paginate @cjs ,:prev_label=>'上一页',:next_label=>'下一页'%>
 <%= link_to 'New Cj', new_cj_path %>

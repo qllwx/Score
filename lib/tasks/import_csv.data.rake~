@@ -2,13 +2,13 @@
 # new file: lib/tasks/import_csv_data.rake
 namespace :csvimport do
   desc "Import CSV.Data=>row[]"
-  task :import_csv_data => :environment do
-    require 'csv'
-    csv_file_path = './db/1.csv'
+  task :import_cj => :environment do
+    require 'fastercsv'
+    csv_file_path = './db/201301.csv'
     i=0
     Cj.delete_all
     print 'beging import CSV file data...',csv_file_path
-    CSV.foreach(csv_file_path) do |row|
+    FasterCSV.foreach(csv_file_path,:headers=>true) do |row|
 	Cj.create!({
      	:ksh=>row[0],
      	:zkzh=>row[1],
