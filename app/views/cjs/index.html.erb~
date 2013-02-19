@@ -2,22 +2,23 @@
 
 <table>
   <tr>
-    <th>Ksh</th>
-    <th>Zkzh</th>
-    <th>Xx</th>
-    <th>Nj</th>
-    <th>Bj</th>
-    <th>Zh</th>
-    <th>Xm</th>
-    <th>Yw</th>
-    <th>Sx</th>
-    <th>Yy</th>
-    <th>Wl</th>
-    <th>Hx</th>
-    <th>Sw</th>
-    <th>Zz</th>
-    <th>Ls</th>
-    <th>Dl</th>
+    <th>考试号</th>
+    <th>准考证号</th>
+    <th>学校</th>
+    <th>年级</th>
+    <th>班级</th>
+    <th>座号</th>
+    <th>姓名</th>
+    <th>语文</th>
+    <th>数学</th>
+    <th>英语</th>
+    <th>物理</th>
+    <th>化学</th>
+    <th>生物</th>
+    <th>政治</th>
+    <th>历史</th>
+    <th>地理</th>
+　　<th>总分</th>　
     <th></th>
     <th></th>
     <th></th>
@@ -41,6 +42,7 @@
     <td><%= cj.zz %></td>
     <td><%= cj.ls %></td>
     <td><%= cj.dl %></td>
+    <td><%= cj.zf %></td>
     <td><%= link_to 'Show', cj %></td>
     <td><%= link_to 'Edit', edit_cj_path(cj) %></td>
     <td><%= link_to 'Destroy', cj, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -49,5 +51,16 @@
 </table>
 
 <br />
-<%= will_paginate @cjs ,:prev_label=>'上一页',:next_label=>'下一页'%>
+<div class="digg_pagination">
+ 
+ <%= will_paginate @cjs ,
+      :container=>false, 
+      :previous_label=>'上一页',
+      :next_label=>'下一页'%>
+ 
+</div>
+<div class="page_info">
+      <%= page_entries_info @cjs %>
+ </div>
+<%= text_field_tag :per ,:page ,:size=>5 %>
 <%= link_to 'New Cj', new_cj_path %>

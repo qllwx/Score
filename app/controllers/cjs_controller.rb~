@@ -3,7 +3,8 @@ class CjsController < ApplicationController
   # GET /cjs.json
   def index
    # @cjs = Cj.all
-   @cjs=Cj.paginate(:page=>params[:page],:per_page=>20)
+   Session(per_page)=>@per_page||=20
+   @cjs=Cj.paginate :page=>params[:page],:per_page=>Session(per_page)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @cjs }

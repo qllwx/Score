@@ -7,6 +7,7 @@ class CreateCjs < ActiveRecord::Migration
       t.integer :bj,:zh
       t.string :xm
       t.integer :yw, :sx,:yy,:wl, :hx, :sw,:zz,:ls,:dl
+      t.integer :zf
 
       t.timestamps
     end

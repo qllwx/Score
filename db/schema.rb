@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20130205122453) do
     t.integer  "zz"
     t.integer  "ls"
     t.integer  "dl"
+    t.integer  "zf"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

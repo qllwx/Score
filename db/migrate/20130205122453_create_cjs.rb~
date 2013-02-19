@@ -3,10 +3,10 @@ class CreateCjs < ActiveRecord::Migration
     create_table :cjs do |t|
       t.string :ksh
       t.string :zkzh
-      t.string :xx
-      t.integer :nj,:bj,:zh
+      t.string :xx,:nj
+      t.integer :bj,:zh
       t.string :xm
-      t.integer :yw, :sx,:yy,:wl, :hx, :sw,:zz,:ls,:dl
+      t.integer :yw, :sx,:yy,:wl, :hx, :sw,:zz,:ls,:dl,:zf
 
       t.timestamps
     end

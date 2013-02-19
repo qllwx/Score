@@ -9,6 +9,12 @@ namespace :csvimport do
     Cj.delete_all
     print 'beging import CSV file data...',csv_file_path
     CSV.foreach(csv_file_path,:headers=>true) do |row|
+        
+        @zf=0
+        7.upto(15) do |i|
+            @zf+=row[i].to_i
+           # puts row[i], row[i].class
+        end  	
 	Cj.create!({
      	:ksh=>row[0],
      	:zkzh=>row[1],
@@ -25,9 +31,13 @@ namespace :csvimport do
     	:sw=>row[12],
     	:zz=>row[13],
     	:ls=>row[14],
-    	:dl=>row[15]})
-        print i+=1 ,row[3],row[6]
+    	:dl=>row[15],
+        :zf=>@zf
+        })
+        print i+=1 ,row[3],row[6],@zf
         puts " "
+        #break if i==10
+       
         end
     end
 end
